@@ -1,17 +1,99 @@
-@import "./variables/colors.scss";
-@import "./variables/variables.scss";
+@import "./variables/colors";
+@import "./variables/variables";
+@import "./variables/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto";
+  box-sizing: border-box;
 }
 
 .main-bg {
+  @include flex-center;
   width: 100vw;
   height: 100vh;
-  background-color: $grey;
-}
+  background-color: $black;
+  .calculator {
+    width: 320px;
+    color: $white;
+    .display {
+      width: 100%;
+      height: 20vh;
+      margin-top: 2rem;
+      color: $white;
+      background-color: $black;
+      .top-display {
+        width: 30vw;
+        height: 5vh;
+        color: $grey-light;
+      }
+      .main-display {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0 25px;
+        font-size: 72px;
+        text-align: right;
+        font-weight: 400;
+      }
+    }
+    .keyboard {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      .number {
+        width: 4rem;
+        height: 4rem;
+        font-size: 32px;
+        font-weight: 400;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: $grey;
+        color: $white;
 
+        transition: 0.2s;
+        &:active {
+          background-color: lighten($grey, 15);
+        }
+      }
+
+      .operator {
+        background-color: $grey-light;
+      }
+      .cero {
+        width: 9rem;
+        height: 4rem;
+        padding-left: 1.5rem;
+        border-radius: 50px;
+        text-align: left;
+      }
+      .c {
+        text-transform: uppercase;
+      }
+      .toprow {
+        color: $black;
+      }
+      .comma {
+        background-color: $grey;
+        color: $white;
+      }
+      .orange {
+        background: $orange;
+        transition: 0.4s;
+        &:focus {
+          background-color: $white;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
