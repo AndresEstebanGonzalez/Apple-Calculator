@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (orientation: landscape) {
+  .main-bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 568px;
+    height: 320px;
+    background-color: #000;
+  }
+  .main-bg .calculator {
+    width: 568px;
+    height: 320px;
+    color: #d4d4d2;
+  }
+  .main-bg .calculator .display {
+    width: 100%;
+    height: 18%;
+    padding: 1.2rem 0 0.7rem 0;
+    color: #d4d4d2;
+  }
+  .main-bg .calculator .display .main-display {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0px 40px;
+    font-size: 33px;
+    text-align: right;
+    font-weight: 400;
+  }
+  .main-bg .calculator .keyboard {
+    width: 100%;
+    height: 79%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  .main-bg .calculator .keyboard .number {
+    width: 3rem;
+    height: 2.75rem;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 45%;
+    border: none;
+    outline: none;
+    background-color: #333333;
+    color: #d4d4d2;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .main-bg .calculator .keyboard .number:active {
+    background-color: #595959;
+  }
+  .main-bg .calculator .keyboard .operator {
+    background-color: #9c9a9a;
+    font-size: 16px;
+  }
+  .main-bg .calculator .keyboard .cero {
+    width: 6.4rem;
+    height: 2.75rem;
+    padding-left: 1.5rem;
+    border-radius: 50px;
+    text-align: left;
+  }
+  .main-bg .calculator .keyboard .clear {
+    text-transform: uppercase;
+  }
+  .main-bg .calculator .keyboard .toprow {
+    color: #000;
+  }
+  .main-bg .calculator .keyboard .comma {
+    background-color: #333333;
+    color: #d4d4d2;
+  }
+  .main-bg .calculator .keyboard .orange {
+    background: #fd9b11;
+    font-size: 17px;
+    font-weight: 600;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .main-bg .calculator .keyboard .orange:focus {
+    background-color: #d4d4d2;
+    color: #fd9b11;
+  }
+  .main-bg .calculator .keyboard .landscape-keyboard {
+    background-color: #212121;
+    font-size: 14px;
+  }
+  .main-bg .calculator .keyboard .mr {
+    background-color: #808080;
+  }
+}
+/*# sourceMappingURL=landscape.css.map */

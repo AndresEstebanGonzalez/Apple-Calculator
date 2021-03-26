@@ -10,32 +10,66 @@
     <main class="main-bg">
         <div class="calculator">
             <div class="display">
-                <div class="top-display"></div>
-                <div class="main-display">123545</div>
+                <div class="top-display">
+                    <p class="history-value" id="history-value"></p>
+                </div>
+                <div class="main-display">
+                    <p id="output-value">123,056</p>
+                </div>
             </div>
             <div class="keyboard">
-                <button class="number operator toprow c" id="c">c</button>
-                <button class="number operator toprow" id="plus-minus">&#177</button>
-                <button class="number operator toprow" id="percentage">%</button>
-                <button class="number operator orange" id="divide">&#247</button>
-                <button class="number" id="7">7</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="9">9</button>
-                <button class="number operator orange" id="multiply">x</button>
-                <button class="number" id="4">4</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="6">6</button>
-                <button class="number operator orange" id="minus">&#8722</button>
-                <button class="number" id="1">1</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id="3">3</button>
-                <button class="number operator orange" id="plus">+</button>
-                <button class="number cero" id="0">0</button>
-                <button class="number operator comma" id="comma">,</button>
-                <button class="number operator orange" id="equal">=</button>
+                <button class="number operator  landscape-keyboard" id="&#8317;" data-operator>&#8317</button>
+                <button class="number operator  landscape-keyboard" id="&#8318;" data-operator>&#8318</button>
+                <button class="number operator landscape-keyboard" id="mc" data-operator>mc</button>
+                <button class="number operator landscape-keyboard" id="m+" data-operator>m+</button>
+                <button class="number operator landscape-keyboard" id="m-" data-operator>m-</button>
+                <button class="number operator landscape-keyboard mr" id="mr" data-operator>mr</button>
+                <button class="number operator clear" id="clear" data-operator>c</button>
+                <button class="number operator" id="&#177"data-operator>&#177</button>
+                <button class="number operator" id="%"data-operator>%</button>
+                <button class="number operator orange" id="&#247"data-operator>&#247</button>
+                <button class="number operator landscape-keyboard" id="2nd" data-operator>2<sup>nd</sup></button>
+                <button class="number operator landscape-keyboard" id="x^2" data-operator>x<sup>2</sup></button>
+                <button class="number operator landscape-keyboard" id="x^3" data-operator>x<sup>3</sup></button>
+                <button class="number operator landscape-keyboard" id="x^y" data-operator>x<sup>y</sup></button>
+                <button class="number operator landscape-keyboard" id="e^x" data-operator>e<sup>x</sup></button>
+                <button class="number operator landscape-keyboard" id="10^" data-operator>10<sup>x</sup></button>
+                <button class="number" id="7"data-number>7</button>
+                <button class="number" id="8"data-number>8</button>
+                <button class="number" id="9"data-number>9</button>
+                <button class="number operator orange" id="x"data-operator>x</button>
+                <button class="number operator landscape-keyboard" id="1/x" data-operator><sup>1</sup>/x</button>
+                <button class="number operator landscape-keyboard" id="x^-2" data-operator><sup>2</sup>&#8730;x</button>
+                <button class="number operator landscape-keyboard" id="x^-3" data-operator><sup>3</sup>&#8730;x</button>
+                <button class="number operator landscape-keyboard" id="x^-y" data-operator><sup>y</sup>&#8730;x</button>
+                <button class="number operator landscape-keyboard" id="ln" data-operator>ln</button>
+                <button class="number operator landscape-keyboard" id="log10" data-operator>log<sub>10</sub></button>
+                <button class="number" id="4"data-number>4</button>
+                <button class="number" id="5"data-number>5</button>
+                <button class="number" id="6"data-number>6</button>
+                <button class="number operator orange" id="&#8722"data-operator>&#8722</button>
+                <button class="number operator landscape-keyboard" id="x!" data-operator>x!</button>
+                <button class="number operator landscape-keyboard" id="sin" data-operator>sin</button>
+                <button class="number operator landscape-keyboard" id="cos" data-operator>cos</button>
+                <button class="number operator landscape-keyboard" id="tan" data-operator>tan</button>
+                <button class="number operator landscape-keyboard" id="e" data-operator>e</button>
+                <button class="number operator landscape-keyboard" id="EE" data-operator>EE</button>
+                <button class="number" id="1"data-number>1</button>
+                <button class="number" id="2"data-number>2</button>
+                <button class="number" id="3"data-number>3</button>
+                <button class="number operator orange" id="+"data-operator>+</button>
+                <button class="number operator landscape-keyboard" id="Rad" data-operator>Rad</button>
+                <button class="number operator landscape-keyboard" id="sinh" data-operator>sinh</button>
+                <button class="number operator landscape-keyboard" id="cosh" data-operator>cosh</button>
+                <button class="number operator landscape-keyboard" id="tanh" data-operator>tanh</button>
+                <button class="number operator landscape-keyboard" id="&#960" data-operator>&#960</button>
+                <button class="number operator landscape-keyboard" id="Rand" data-operator>Rand</button>
+                <button class="number cero" id="0"data-number>0</button>
+                <button class="number operator comma" id=","data-operator>,</button>
+                <button class="number operator orange" id="="data-operator>=</button>
             </div>
         </div>
     </main>
-<script src="./main.js"></script>    
+<script src="main.js"></script>    
 </body>
 </html>

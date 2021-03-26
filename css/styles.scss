@@ -19,6 +19,7 @@
   .calculator {
     width: 320px;
     color: $white;
+
     .display {
       width: 100%;
       height: 20vh;
@@ -26,9 +27,16 @@
       color: $white;
       background-color: $black;
       .top-display {
-        width: 30vw;
+        width: 320px;
         height: 5vh;
         color: $grey-light;
+      }
+      .history-value {
+        width: 320px;
+        height: 100%;
+        padding: 0 25px;
+        text-align: right;
+        font-size: 18px;
       }
       .main-display {
         width: 100%;
@@ -76,7 +84,7 @@
         border-radius: 50px;
         text-align: left;
       }
-      .c {
+      .clear {
         text-transform: uppercase;
       }
       .toprow {
@@ -92,6 +100,209 @@
         &:focus {
           background-color: $white;
           color: $orange;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .landscape-keyboard {
+    display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .main-bg {
+    @include flex-center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    .calculator {
+      width: 568px;
+      height: 320px;
+      color: $white;
+
+      .display {
+        width: 100%;
+        height: 18%;
+        margin: 0;
+        padding: 1.2rem 0 0.7rem 0;
+        color: $white;
+        .top-display {
+          display: none;
+        }
+        .main-display {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0px 40px;
+          font-size: 33px;
+          text-align: right;
+          font-weight: 400;
+        }
+      }
+      .keyboard {
+        width: 100%;
+        height: 79%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        .number {
+          width: 3rem;
+          height: 2.75rem;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 45%;
+          border: none;
+          outline: none;
+          background-color: $grey;
+          color: $white;
+
+          transition: 0.2s;
+          &:active {
+            background-color: lighten($grey, 15);
+          }
+        }
+
+        .operator {
+          background-color: $grey-light;
+          font-size: 16px;
+        }
+        .cero {
+          width: 6.4rem;
+          height: 2.75rem;
+          padding-left: 1.5rem;
+          border-radius: 50px;
+          text-align: left;
+        }
+        .clear {
+          text-transform: uppercase;
+        }
+        .toprow {
+          color: $black;
+        }
+        .comma {
+          background-color: $grey;
+          color: $white;
+        }
+        .orange {
+          background: $orange;
+          font-size: 17px;
+          font-weight: 600;
+          transition: 0.4s;
+          &:focus {
+            background-color: $white;
+            color: $orange;
+          }
+        }
+        .landscape-keyboard {
+          background-color: $black-light;
+          font-size: 14px;
+        }
+        .mr {
+          background-color: $grey-middle-light;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .main-bg {
+      @include flex-center;
+      width: 100vw;
+      height: 100vh;
+      background-color: $black;
+      .calculator {
+        width: 768px;
+        height: 386px;
+        color: $white;
+
+        .display {
+          width: 100%;
+          height: 18%;
+          margin: 0;
+          padding: 1.2rem 0 0.7rem 0;
+          color: $white;
+          .top-display {
+            display: none;
+          }
+          .main-display {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0px 40px;
+            font-size: 33px;
+            text-align: right;
+            font-weight: 400;
+          }
+        }
+        .keyboard {
+          width: 100%;
+          height: 79%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          .number {
+            width: 4rem;
+            height: 3.3rem;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 45%;
+            border: none;
+            outline: none;
+            background-color: $grey;
+            color: $white;
+
+            transition: 0.2s;
+            &:active {
+              background-color: lighten($grey, 15);
+            }
+          }
+
+          .operator {
+            background-color: $grey-light;
+            font-size: 16px;
+          }
+          .cero {
+            width: 8.8rem;
+            height: 3.3rem;
+            padding-left: 1.9rem;
+            border-radius: 50px;
+            text-align: left;
+          }
+          .clear {
+            text-transform: uppercase;
+          }
+          .toprow {
+            color: $black;
+          }
+          .comma {
+            background-color: $grey;
+            color: $white;
+          }
+          .orange {
+            background: $orange;
+            font-size: 17px;
+            font-weight: 600;
+            transition: 0.4s;
+            &:focus {
+              background-color: $white;
+              color: $orange;
+            }
+          }
+          .landscape-keyboard {
+            background-color: $black-light;
+            font-size: 14px;
+          }
+          .mr {
+            background-color: $grey-middle-light;
+          }
         }
       }
     }
