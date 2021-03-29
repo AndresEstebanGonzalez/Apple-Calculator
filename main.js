@@ -39,7 +39,12 @@ operator.forEach((item) => {
     } else {
       var output = getOutput();
       var history = getHistory();
-      if (output != "") {
+      if (output == "" && history != "") {
+        if (isNaN(history[history.length - 1])) {
+          history = history.substr(0, history.length - 1);
+        }
+      }
+      if (output != "" || history != "") {
         output = reverseNumberFormat(output);
         history = history + output;
         if (this.id == "=") {

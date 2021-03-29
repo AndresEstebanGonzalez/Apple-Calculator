@@ -283,9 +283,6 @@
     padding: 1.2rem 0 0.7rem 0;
     color: #d4d4d2;
   }
-  .main-bg .calculator .display .top-display {
-    display: none;
-  }
   .main-bg .calculator .display .main-display {
     width: 100%;
     height: 100%;
